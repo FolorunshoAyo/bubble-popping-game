@@ -21,12 +21,12 @@
     }
 
     function popOnHover() {
-        ballons.forEach(ballon => {
-            ballon.addEventListener("mouseover", popBallon, false);
+        bubbles.forEach(bubble => {
+            bubble.addEventListener("mouseover", popBubbles, false);
         });
     }
 
-    function popBallon(){
+    function popBubbles() {
         let backgroundColor = this.style.backgroundColor;
 
         this.style.borderRadius = "0";
@@ -35,7 +35,7 @@
         this.style.color = backgroundColor;
 
         popCount++;
-        this.removeEventListener("mouseover", popBallon, false);
+        this.removeEventListener("mouseover", popBubbles, false);
         if (popCount == 25) {
             setTimeout(() => {
                 alert("Great Job");
