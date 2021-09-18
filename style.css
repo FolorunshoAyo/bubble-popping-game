@@ -1,0 +1,41 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100hv;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+.main{
+    width: 60%;
+    margin: 2em auto;
+}
+
+.main h2{
+    color: rgb(69, 69, 209);
+    text-transform: uppercase;
+}
+
+.ballons-container{
+    padding: 0.3em;
+}
+
+.ballon-group{
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-around   ;
+}
+
+.ballon{
+    font-size: 1.5em;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+}
